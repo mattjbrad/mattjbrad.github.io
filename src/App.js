@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import classes from './App.css';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Header from './components/UI/Header/Header';
+import Navigation from './components/UI/Navigation/Navigation';
+
+import Rate from './containers/Rate/Rate';
+import Leaderboard from './containers/Leaderboard/Leaderboard';
+import Upload from './containers/Upload/Upload';
 
 class App extends Component {
   render() {
     return (
-      <div className={classes.App}>
-        <header className={classes['App-header']}>
-        <img src={logo} className={classes['App-logo']} alt="logo" />
-          <h1 className={classes['App-title']}>Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Navigation />
+          <Route exact path="/" component={Rate}/>
+          <Route path="/leaderboard" component={Leaderboard}/>
+          <Route path="/upload" component={Upload}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }

@@ -1,0 +1,21 @@
+.Header {
+    height: 10%;
+    align-items: center;
+    display: flex;
+}
+
+.Header h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    margin: 10px;
+    color: #EF626C;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.tagline {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.8em;
+    margin-top:0;
+    color: #312f2f;
+}
