@@ -1,11 +1,13 @@
 body {
   margin: 0;
   padding: 0;  
-  font-family: 'Shadows Into Light', cursive;
-  font-family: 'Varela Round', sans-serif;
+  /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Varela Round', sans-serif; */
   font-family: 'Poiret One', cursive;
   /* font-family: 'Courgette', cursive; */
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 
-  background: #F6E8EA;
+  background: #EFF7FF;
   text-align: center;
 }

@@ -1,0 +1,42 @@
+img.Dog {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+/* Temporary solution */
+img.Dog:hover {
+    transform: scale(4.0);
+    transition: 0.5s;
+}
+
+.ListedDog {
+    margin: 10px auto;
+    height: 100px;
+    border: 2px solid rgb(189, 188, 188);
+    border-radius: 4px;  
+    background-color: white;
+}
+
+.ListItem {
+    font-size: 1.6em;    
+    list-style: none;
+    text-align: left;
+    margin: auto;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px;
+}
+
+.DogImage {
+    display: inline-block;
+    padding: 10px 10px 10px 0px;
+    height: 80px;
+}
+
+.DogText {
+    display: inline-block;
+    vertical-align: top;
+}

@@ -7,15 +7,43 @@
 .Header h1 {
     width: 100%;
     text-align: center;
-    font-size: 80px;
-    margin: 10px;
-    color: #EF626C;
-    font-family: 'Shadows Into Light', cursive;
+    font-size: 100px;
+    margin: 5px;
+    color: #ed505b;
+    text-shadow: 2px 2px 4px grey;
+    text-shadow: 1px 1px grey;
+    font-family: 'Handlee', cursive;
+}
+
+.Emoji {
+    font-size: 60px;
 }
 
 .tagline {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.8em;
-    margin-top:0;
+    font-size: 2.0em;
+    margin:0;
+    padding-bottom: 20px;
     color: #312f2f;
+    font-family: 'Handlee', cursive;
+    text-decoration: underline;
+
+}
+
+.Background {
+    background-color: #d8ecf4;
+    border-bottom: 2px #312f2f solid;
+}
+
+@media (max-width: 487px) {
+    .Header h1 {
+        font-size: 70px;
+    }
+
+    .Emoji {
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 1.5em;
+    }
 }

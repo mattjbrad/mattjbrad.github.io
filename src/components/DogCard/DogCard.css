@@ -1,0 +1,30 @@
+.Img {
+    object-fit: cover;
+    height:400px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.DogCard:hover {
+    border: 2px solid #ddd; 
+    transition: 0.5s;
+    box-shadow: 0 0 8px 4px rgb(237,80,91);
+    cursor: pointer;
+}
+
+.DogCard {
+    border: 2px solid rgb(189, 188, 188);
+    border-radius: 4px;  
+    padding: 10px; 
+    transition: 0.5s;
+    background-color: white;
+}
+
+.Name {
+    text-transform: capitalize;
+}
+
+.Description {
+    font-size: 1.7em;
+    margin: 10px;
+}
