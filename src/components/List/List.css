@@ -1,3 +1,18 @@
 .List {
     padding:0;
+    width: 1000px;
+}
+
+.left, .right {
+    display: inline-block;
+}
+
+@media ( max-width: 900px ) {
+    .left, .right {
+        display: block;
+    }
+
+    .List {
+        width: 100%;
+    }
 }

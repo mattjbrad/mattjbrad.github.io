@@ -1,13 +1,12 @@
-img.Dog {
+img.Thumbnail {
     height: 80px;
     width: 80px;
     object-fit: cover;
-    margin-right: 10px;
     transition: 0.5s;
 }
 
 /* Temporary solution */
-img.Dog:hover {
+img.Thumbnail:hover {
     transform: scale(4.0);
     transition: 0.5s;
 }
@@ -22,7 +21,6 @@ img.Dog:hover {
 
 .ListItem {
     font-size: 1.6em;    
-    list-style: none;
     text-align: left;
     margin: auto;
     height: 100px;
@@ -32,11 +30,55 @@ img.Dog:hover {
 
 .DogImage {
     display: inline-block;
-    padding: 10px 10px 10px 0px;
+    padding: 10px 0px 10px 10px;
     height: 80px;
 }
 
 .DogText {
     display: inline-block;
     vertical-align: top;
+    text-align: left;
+    margin: auto;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+
+.Li {
+    font-size: 2.0em;
+    margin: 10px 40px;
+}
+
+@media (max-width: 500px) {
+    .DogText {
+        font-size: 0.8em;
+        height: 70px;
+        line-height: 70px;
+        word-break: break-all;
+    }
+
+    img.Thumbnail {
+        height: 50px;
+        width: 50px;
+    }
+
+    .ListedDog {
+        height: 70px;
+    }
+    
+    .ListItem {
+        font-size: 1.0em;    
+        height: 70px;
+        line-height: 70px;
+    }
+    
+    .DogImage {
+        height: 50px;
+    }
+    
+    .Li {
+        font-size: 1.5em;
+    }
 }

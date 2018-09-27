@@ -6,3 +6,9 @@
     display: inline-block;
     margin: 20px;
 }
+
+@media (max-width: 466px) {
+    .Thumbnail {
+        margin: 10px;
+    }
+}

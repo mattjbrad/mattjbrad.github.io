@@ -28,3 +28,15 @@
     font-size: 1.7em;
     margin: 10px;
 }
+
+@media (max-width: 466px) {
+    .Img {
+        height: 280px;
+        width:  280px;
+    }
+
+    .Description {
+        font-size: 1.4em;
+        margin: 5px;
+    }
+}

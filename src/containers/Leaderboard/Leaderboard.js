@@ -13,7 +13,9 @@ export default class Leaderboard extends Component {
       .then(response => response.json())
       .then((response) => {
         console.log(response);
-        this.setState({leaderboard : response});
+        //duplicationg dogs to make the leaderboard bigger, remove when finished
+        let leaderboard = [...response, ...response, ...response, ...response];
+        this.setState({leaderboard : leaderboard});
       })
       .catch(err => console.log(err));
   }

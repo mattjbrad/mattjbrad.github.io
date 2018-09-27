@@ -1,5 +1,4 @@
 .Header {
-    height: 10%;
     align-items: center;
     display: flex;
 }
@@ -12,7 +11,7 @@
     color: #ed505b;
     text-shadow: 2px 2px 4px grey;
     text-shadow: 1px 1px grey;
-    font-family: 'Handlee', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .Emoji {
@@ -24,7 +23,7 @@
     margin:0;
     padding-bottom: 20px;
     color: #312f2f;
-    font-family: 'Handlee', cursive;
+    font-family: 'Varela Round', sans-serif;
     text-decoration: underline;
 
 }
@@ -32,6 +31,10 @@
 .Background {
     background-color: #d8ecf4;
     border-bottom: 2px #312f2f solid;
+    height: 100%;
+    background-image: url("/img/dog2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 487px) {
@@ -45,5 +48,19 @@
 
     .tagline {
         font-size: 1.5em;
+    }
+}
+
+@media (max-width: 345px) {
+    .Header h1 {
+        font-size: 50px;
+    }
+
+    .Emoji {
+        font-size: 30px;
+    }
+
+    .tagline {
+        font-size: 1.3em;
     }
 }
