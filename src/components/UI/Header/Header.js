@@ -3,13 +3,10 @@ import classes from './Header.css';
 
 export default () => {
   return (
-    <div className={classes.Background}>
-      <div className={classes.Header}>
-        <h1>rate my d<span role="img" aria-label="o" className={classes.Emoji}>🐶</span>g</h1>
-      </div>
-      <div>
-        <p className={classes.tagline}>Who's a good boy then?</p>
-      </div>
+    <div className={classes.Header}>
+      {/* <img className={classes.logo} src="/img/large-orange-logo.png"></img> */}
+      <h1 className={classes['logo-text']} style={{marginRight:'-20px'}}>rate</h1><img className={classes.logo} src="/img/logo-old.png"></img> <h1 className={classes['logo-text']} style={{marginLeft:'-20px'}}>dog </h1>
+      <img className={classes['logo-small']} src="/img/logo-small-notext.png"></img>
     </div>
   )
 }

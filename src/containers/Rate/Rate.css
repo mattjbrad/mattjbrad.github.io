@@ -1,5 +1,5 @@
 .Rate {
-    margin:auto;
+    margin:0 auto 50px;
 }
 
 .Thumbnail {
@@ -7,8 +7,20 @@
     margin: 20px;
 }
 
-@media (max-width: 466px) {
+@media (max-width: 628px) {
     .Thumbnail {
         margin: 10px;
+    }
+}
+
+@media (max-width: 488px) {
+    .Thumbnail {
+        margin: 5px;
+    }
+}
+
+@media (max-height: 500px){
+    .Thumbnail{
+        margin: 20px;
     }
 }

@@ -12,12 +12,12 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div style={{minHeight: '100%', position:'relative'}}>
           <Header />
-          <Navigation />
           <Route exact path="/" component={Rate}/>
           <Route path="/leaderboard" component={Leaderboard}/>
           <Route path="/upload" component={Upload}/>
+          <Navigation />
         </div>
       </BrowserRouter>
     );

@@ -1,23 +1,35 @@
 .NavItem {
-    margin: 10px 0;
+    /* margin: 10px 0; */
     box-sizing: border-box;
     display: block;
     width: 100%;
 }
 
 .NavItem a {
-    color: #312f2f;
+    color: #272635;
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
     display: block;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    padding: 6px;
+    border-top: 3px #434343 solid;
+}
+
+.NavItem a i {
+    margin-right:10px;
+}
+
+span.Text {
+    display: none;
 }
 
 .NavItem a:hover,
 .NavItem a:active,
 .NavItem a.active {
-    color: #40A4C8;
+    color: #E84855f7;
+    border-top: 3px solid #E84855f7;
+
 }
 
 @media (min-width: 500px) {
@@ -27,18 +39,24 @@
         height: 100%;
         align-items: center;
     }
+
+    span.Text {
+        display: inline;
+    }
     
     .NavItem a {
-        color: #312f2f;
+        color: #272635;
         height: 100%;
-        padding: 16px 10px;
-        border-bottom: 4px solid transparent;
+        padding: 10px;
+        border-top: 3px solid transparent;
+        border-top: 3px #434343 solid;
+
     }
     
     .NavItem a:hover,
     .NavItem a:active,
     .NavItem a.active {
-        border-bottom: 2px solid #40A4C8;
-        color: #40A4C8;
+        border-top: 3px solid #E84855;
+        color: #E84855;
     }
 }

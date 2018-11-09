@@ -1,10 +1,57 @@
 .Upload {
-    font-size: 2.5em;
-    padding: 10% 25%;
+    font-size: 2.0rem;
 }
 
 @media (max-width: 1000px){
     .Upload {
         font-size: 2.0em;
     }
+}
+
+.uploadForm {
+    text-align: center;
+}
+
+.fileInput {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.fileInput + label {
+    color: white;
+    background-color: rgb(232,72,85);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    box-shadow: 0 1.5rem 2rem rgba(67, 67,67, 0.2);
+    width: 205px;
+}
+
+.fileInput:focus + label,
+.fileInput + label:hover {
+    background-color: #d0404c;
+    cursor: pointer;
+}
+
+.uploadButton {
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background-color: #272635;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    box-shadow: 0 1.5rem 2rem rgba(67, 67,67, 0.2);
+    width: 225px;
+}
+
+.uploadButton:hover, 
+.uploadButton:active {
+    background-color: #38364c;
+    cursor: pointer;
 }

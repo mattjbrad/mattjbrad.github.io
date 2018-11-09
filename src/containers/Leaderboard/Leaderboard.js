@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import List from '../../components/List/List';
+import Spinner from '../../components/UI/Spinner/Spinner';
 import classes from './Leaderboard.css';
 
 export default class Leaderboard extends Component {
 
   state = {
-    leaderboard : []
+    leaderboard : [],
+    loadingLeaderboard: true
   }
 
   componentDidMount = () => {
@@ -13,17 +15,23 @@ export default class Leaderboard extends Component {
       .then(response => response.json())
       .then((response) => {
         console.log(response);
-        //duplicationg dogs to make the leaderboard bigger, remove when finished
-        let leaderboard = [...response, ...response, ...response, ...response];
-        this.setState({leaderboard : leaderboard});
+        this.setState({leaderboard : response});
+        this.setState({loadingLeaderboard: false});
       })
       .catch(err => console.log(err));
   }
 
   render() {
+
+    let display;
+    if(this.state.loadingLeaderboard===true){
+      display = <Spinner loadingText='Loading leaderboard...'/>;
+    } else {
+      display = <List leaderboard={this.state.leaderboard} />;
+    }
     return (
       <div className={classes.Leaderboard}>
-        <List leaderboard={this.state.leaderboard} />
+        {display}
       </div>
     )
   }

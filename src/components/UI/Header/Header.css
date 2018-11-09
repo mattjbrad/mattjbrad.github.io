@@ -1,66 +1,82 @@
 .Header {
-    align-items: center;
-    display: flex;
+    height: 160px;
 }
 
-.Header h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 100px;
-    margin: 5px;
-    color: #ed505b;
-    text-shadow: 2px 2px 4px grey;
-    text-shadow: 1px 1px grey;
-    font-family: 'Varela Round', sans-serif;
+.logo {
+    width: 160px;
+    height: 160px;
 }
 
-.Emoji {
-    font-size: 60px;
+.logo-small {
+    width: 60px;
+    height: 60px;
+    display: none;
 }
 
-.tagline {
-    font-size: 2.0em;
-    margin:0;
-    padding-bottom: 20px;
-    color: #312f2f;
-    font-family: 'Varela Round', sans-serif;
-    text-decoration: underline;
-
+.logo-text {
+    display: inline-block;
+    font-size: 75px;
+    transform: translateY(-25%);
+    letter-spacing: 10px;
+    color: #E84855;
 }
+    
 
-.Background {
-    background-color: #d8ecf4;
-    border-bottom: 2px #312f2f solid;
-    height: 100%;
-    background-image: url("/img/dog2.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-@media (max-width: 487px) {
-    .Header h1 {
-        font-size: 70px;
+@media (max-width: 580px) {
+    .logo {
+        height: 112px;
+        width: 112px;
     }
 
-    .Emoji {
-        font-size: 40px;
+    .logo-text {
+        font-size: 60px;
+        transform: translateY(-25%);
     }
 
-    .tagline {
-        font-size: 1.5em;
+    .Header {
+        height: 120px;
     }
 }
 
-@media (max-width: 345px) {
-    .Header h1 {
-        font-size: 50px;
+@media (max-width: 410px) {
+    .logo-text {
+        display: none;
     }
 
-    .Emoji {
-        font-size: 30px;
+    .logo {
+        display:none;
     }
 
-    .tagline {
-        font-size: 1.3em;
+    .logo-small {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .Header {
+        height: 60px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-height: 500px){
+    .logo-text {
+        display: none;
+    }
+
+    .logo {
+        display:none;
+        z-index: 1000;
+    }
+
+    .logo-small {
+        display: inline;
+        position:fixed;
+        top:5px;
+        left:5px;
+    }
+
+    .Header {
+        height: 0;
     }
 }

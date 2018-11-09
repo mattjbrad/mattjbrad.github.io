@@ -1,4 +1,15 @@
 .Leaderboard {
     margin: auto;
+    overflow: scroll;
+    margin-bottom: 30px;
     display: inline-block;
+}
+
+.Tagline {
+    font-size: 2.0em;
+    margin:0;
+    padding-bottom: 20px;
+    /* color: #F1E9DB; */
+    color: #272635;
+    /* text-decoration: underline; */
 }

@@ -9,7 +9,12 @@ export default (props) => {
             <img className={classes.Thumbnail} src={props.image} alt="Dog"/>
           </div>
           <div className={classes.DogText}>
-             {props.name+', '+props.age+' years old'}
+            <div className={classes.DogName}>
+              {props.name}
+            </div>
+            <div className={classes.DogAge}>
+              {props.age+' years old'}
+            </div>     
            </div>
         </div>
       </li>
